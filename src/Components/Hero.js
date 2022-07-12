@@ -1,18 +1,20 @@
 import React from 'react'
+import avatar from "../assets/AvatarMaker.svg"
 
 const Hero = () => {
     const flexbox={
         display:"flex",
+        height:"400px",
+        background: "linear-gradient(to top right, #5A189A , #240046)",
+        color:"white",
     }
   return (
     <section style={flexbox}>
-        <img src='' alt='profile pic'/>
-        <div>
-        <h1>Hi I am Siddharth</h1>
-        <p>
-            A budding computer engineer and developer, currently pursuing computer science as a pre-final year student at DTU, Delhi, India.
-            </p>
-        <p>I am good at problem solving and analytical thinking. I participate in coding contests regularly to brush up my core DSA skills, simultaneously working on my development skills to build eye-catching and usable websites.</p>
+        <img src={avatar} alt='profile pic'style={{ width:"300px"}}/>
+        <div style={{}}>
+        <h1 style={{paddingTop:"50px", paddingBottom:"20px"}}>Hi I am Siddharth</h1>
+        <p style={{textAlign:"left", paddingLeft:"150px", paddingRight:"50px",fontSize:"20px"}}>A budding computer engineer and developer, currently pursuing computer science as a pre-final year student at DTU, Delhi, India.</p>
+        <p style={{textAlign:"left", paddingLeft:"150px", paddingRight:"50px",fontSize:"20px"}}>I am good at problem solving and analytical thinking. I participate in coding contests regularly to brush up my core DSA skills, simultaneously working on my development skills to build eye-catching and usable websites.</p>
         </div>
     </section>
   )
